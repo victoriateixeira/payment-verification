@@ -9,7 +9,7 @@ const validateDetails = (date, cvv, pan) => {
   const valPan = validatePan(pan);
   if (valPan.type) return valPan;
 
-  return {type: null, message: 'Success! Card information is valid.'}
+  return {type: 200, message: 'Success! Card information is valid.'}
   
 }
 
