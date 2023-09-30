@@ -4,6 +4,6 @@ const app = express()
 app.use(express.json());
 const paymentController = require('./PaymentController')
 
-app.get('/verification', paymentController.validateDetails)
+app.post('/verification', paymentController.validateDetails)
 
 module.exports = app
