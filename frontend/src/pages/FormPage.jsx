@@ -10,10 +10,6 @@ import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 
 function FormPage() {
 
-  // const [cardNumber, setCardNumber] = useState('');
-  // const [expiryMonth, setExpiryMonth] = useState('');
-  // const [expiryYear, setExpiryYear] = useState('');
-  // const [cvv, setCvv] = useState('');
   const [response, setResponse] = useState('');
   const [invalidCard, setInvalidCard] = useState(false);
   const [validCard, setValidCard] = useState(false);
@@ -34,7 +30,6 @@ function FormPage() {
  }
 const checkCardInfo = async (e) => {
   e.preventDefault();
-  console.log('OIIIII')
   const obj = {
     pan: cardData.pan,
     cvv: cardData.cvv,
@@ -62,7 +57,6 @@ const checkCardInfo = async (e) => {
        expiry={cardData.expiry}
        cvc={cardData.cvv}
        name='JOHN SMITH'
-      //  focused={state.focus}
       />
       <form>
         <label htmlFor="pan">
