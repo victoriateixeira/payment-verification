@@ -40,11 +40,11 @@ const checkCardInfo = async (e) => {
   const resp = await postAPI(obj);
   console.log(resp)
   setResponse(resp.message)
-  if(resp.type === 400) {
+  if(!resp.valid) {
     setInvalidCard(true)
     setValidCard(false)
   }
-  if(resp.type === 200) {
+  if(resp.valid) {
     setValidCard(true)
     setInvalidCard(false)
   }
