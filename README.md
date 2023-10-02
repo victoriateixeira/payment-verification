@@ -71,16 +71,16 @@ Before running the project, ensure that you have the following prerequisites ins
 
 The project uses `concurrently` to start both the Frontend and Backend with a single command.
 
-To start both the Frontend and Backend concurrently,  on project root directory run:
+To start both the Frontend and Backend concurrently,  on project root directory (payment-verification) run:
 
 ```bash
 npm start
 ```
 
-This command will launch both the Frontend and Backend applications, and you can access them as follows:
+This command will launch both the Frontend and Backend applications:
 
 - Frontend: [http://localhost:3000](http://localhost:3000)
-- Backend API: [http://localhost:5000](http://localhost:5000) - if you wish to change the port in which the backend runs, you can do so at the server.js file in the backend folder.
+- Backend API: will run on port 5000 - if you wish to change the port in which the backend runs, you can do so at the server.js file in the backend folder.
 
 Make sure you have already installed the project dependencies as described in the installation steps before running `npm start`.
 
