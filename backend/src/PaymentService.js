@@ -29,7 +29,7 @@ const validateDetails = (month, year, cvv, pan) => {
 const validateDate = (month, year) => {
 const currDateYear = new Date().getFullYear()
 const currDateMonth = new Date().getMonth() + 1
-if ((currDateYear > Number(year)) || ((currDateYear === Number(year)) && currDateMonth > Number(month)) ){
+if ((currDateYear > Number(year)) || ((currDateYear === Number(year)) && currDateMonth >= Number(month)) ){
   return {valid: false, message: 'Card expiry date is not valid'}
 }
 }
