@@ -10,8 +10,6 @@ This README file provides an overview of the E-Commerce Payment Validation Proje
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Description
 
