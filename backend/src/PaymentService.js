@@ -54,16 +54,17 @@ if( pan.length < 16 || pan.length > 19) {
 }
  
 }
+// Luhn's algorithm code inspired on research on various online resources
 
 const checkDigit = (pan) => {
  
     let sum = 0;
-    let isEven = false;
+    let isDouble = false;
   
     for (let i = pan.length-1; i >=0; i-=1) {
       let digit = parseInt(pan.charAt(i), 10);
   
-      if (isEven) {
+      if (isDouble) {
         digit *= 2;
         if (digit > 9) {
           digit -= 9;
@@ -71,7 +72,7 @@ const checkDigit = (pan) => {
       }
   
       sum += digit;
-      isEven = !isEven;
+      isDouble = !isDouble;
     }
     return (sum % 10) === 0;
   }
