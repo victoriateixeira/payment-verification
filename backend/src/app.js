@@ -1,9 +1,9 @@
-const express = require ('express')
+const express = require('express');
 
-const app = express()
+const app = express();
 app.use(express.json());
-const paymentController = require('./PaymentController')
+const paymentController = require('./PaymentController');
 
-app.post('/verification', paymentController.validateDetails)
+app.post('/verification', paymentController.validateDetails);
 
-module.exports = app
+module.exports = app;

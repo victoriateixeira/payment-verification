@@ -1,13 +1,12 @@
 main {
-
-background-color:#116AA5;
-height: 50%;
-margin: auto;
-margin-top: 15%;
-text-align: center ;
-width: 40%;
-padding: 50px;
-border-radius: 30px;
+  background-color: #116aa5;
+  height: 50%;
+  margin: auto;
+  margin-top: 15%;
+  text-align: center;
+  width: 40%;
+  padding: 50px;
+  border-radius: 30px;
 }
 
 form {
@@ -19,7 +18,7 @@ form {
 }
 
 input {
-  border: none ;
+  border: none;
   border-radius: 15px;
   font-size: 18px;
   font-weight: 600;
@@ -30,10 +29,10 @@ input {
 }
 
 .submit-button {
-  background-color:#090884 ;
+  background-color: #090884;
   border-color: #090884;
   border-radius: 15px;
-  color:#FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   margin: 10px;
@@ -42,16 +41,16 @@ input {
 }
 
 .submit-button:hover {
-background-color: #FFFFFF ;
-border: 1px solid #090884;
-color: #090884;
+  background-color: #ffffff;
+  border: 1px solid #090884;
+  color: #090884;
 }
 
 /* CSS code partially inspired by this resource: https://alvarotrigo.com/blog/css-alerts/ */
 
 .content {
-  padding:0;
-  margin:10% 15%;   
+  padding: 0;
+  margin: 10% 15%;
 }
 
 .close {
@@ -61,14 +60,15 @@ color: #090884;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
-  opacity: .2;
+  opacity: 0.2;
 }
 
-.close:hover,.close:focus {
+.close:hover,
+.close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 button.close {
@@ -100,7 +100,7 @@ button.close {
 }
 
 .alert-white {
-  background-image: linear-gradient(to bottom,#FFFFFF,#F9F9F9);
+  background-image: linear-gradient(to bottom, #ffffff, #f9f9f9);
   border-top-color: #d8d8d8;
   border-bottom-color: #bdbdbd;
   border-left-color: #cacaca;
@@ -152,19 +152,21 @@ button.close {
 
 .alert-white .icon i {
   font-size: 20px;
-  color: #FFF;
+  color: #fff;
   left: 12px;
   margin-top: -10px;
   position: absolute;
   top: 50%;
 }
 
-.alert-white.alert-danger .icon,.alert-white.alert-danger .icon:after {
+.alert-white.alert-danger .icon,
+.alert-white.alert-danger .icon:after {
   border-color: #ca452e;
   background: #da4932;
 }
 
-.alert-white.alert-success .icon,.alert-white.alert-success .icon:after {
+.alert-white.alert-success .icon,
+.alert-white.alert-success .icon:after {
   border-color: #54a754;
   background: #60c060;
 }
