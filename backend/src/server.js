@@ -1,5 +1,5 @@
 const app = require('./app');
-const PORT = 5001;
+const PORT = 5000;
 
 app.listen(PORT);
-console.log(`Server sterted on port ${PORT}`);
+console.log(`Server started on port ${PORT}`);
