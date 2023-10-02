@@ -2,6 +2,7 @@
   "dependencies": {
     "axios": "^1.5.1",
     "concurrently": "^8.2.1",
+    "cors": "^2.8.5",
     "eslint": "^8.50.0"
   },
   "name": "payment_verification",
@@ -11,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "front": "npm start --prefix frontend",
     "back": "npm start --prefix backend",
-    "start":  "concurrently \"npm run back\" \"npm run front\""
+    "start": "concurrently \"npm run back\" \"npm run front\""
   },
   "keywords": [],
   "author": "",
